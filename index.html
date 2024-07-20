@@ -3,46 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Amazon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="search-box">
-                <input type="text" placeholder="Enter Your Location" class="inBox">
-                <button class="fa-solid fa-magnifying-glass" id="search-button"></button>
+    <header>
+        <div class="navbar">
+          <div class="nav-logo border">
+            <div class="logo"></div>
+          </div>
+          <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+               <i class="fa-solid fa-location-dot"></i>
+              
+              <p class="add-sec">Pakistan</p>
             </div>
-        </div>
-        <div class="location-not-found">
-            <h1>Sorry! Location Not Found</h1>
-            <img src="/images/404.png" alt="404">
-        </div>
-        <div class="weather-body">
-            <img src="/images/cloud.png" alt="Weather" class="weather-image">
-            <div class="weather-box">
-                <p class="temperature">0<sup>°C</sup></p>
-                <p class="description">Light Rain</p>
+          </div>
+          <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+            </select>
+            <input placeholder="Search Amazon" class="search-input"> 
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
             </div>
-            <div class="weather-details">
-                <div class="humidity">
-                    <img src="/images/water.png" alt="">
-                    <div class="text">
-                        <span id="humidity">45%</span>
-                        <p>humidity</p>
-                    </div>
-                </div>
-                <div class="wind">
-                    <i class="fa-solid fa-wind"></i>
-                    <div class="text">
-                        <span id="wind-speed">12Km/h</span>
-                        <p>wind speed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
+          <div class="nav-signin border">
+            <p><span>Hello,Sign in</span></p>
+            <p class="nav-second">Accounts and lists</p>
+          </div>
+          <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">&Orders</p>
+          </div>
+          <div class="nav-cart border">
+            <!-- Cart icon from font awesome website -->
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+          </div>
+        </div>  
+        <div class="panel">
+          <div class="panel-all">
+            <!-- Menu ICON from font awesome website -->
+            <i class="fa-solid fa-bars"></i>
+             All
+          </div>
+          <div class="panel-ops">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+          </div>
+          <div class="panel-deals">
+            Shop Deals in Electronics 
+          </div>
+        </div>             
+    </header>
+    <div class="hero-section">
+      <div class="hero-msg">
+        <p>You are on Amazon.com. You can also shop on Amazon.pk For millions of products
+          with fast local delivery. <a href="">Click Here to go to Amazon.pk</a> </p>
+      </div>
     </div>
+    <div class="shop-section">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Cloths</h2>
+          <div class="box-image" style="background-image: url('box1_image.jpg');"></div>
+          <p>See More</p>
+        </div>               
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Health & personal Care</h2>
+          <div class="box-image" style="background-image: url('box2_image.jpg');"></div>
+          <p>See More</p>
+        </div> 
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Furniture</h2>
+          <div class="box-image" style="background-image: url('box3_image.jpg');"></div>
+          <p>See More</p>
+        </div> 
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Mobile Phones & Accessories</h2>
+          <div class="box-image" style="background-image: url('box4_image.jpg')"></div>
+          <p>See More</p>
+        </div> 
+      </div>
+      <div class="box5 box">
+        <div class="box-content">
+          <h2>Beauty Products</h2>
+          <div class="box-image" style="background-image: url('box5_image.jpg');"></div>
+          <p>See More</p>
+        </div>               
+      </div>
+      <div class="box6 box">
+        <div class="box-content">
+          <h2>Pet Care</h2>
+          <div class="box-image" style="background-image: url('box6_image.jpg');"></div>
+          <p>See More</p>
+        </div> 
+      </div>
+      <div class="box7 box">
+        <div class="box-content">
+          <h2>Toys</h2>
+          <div class="box-image" style="background-image: url('box7_image.jpg');"></div>
+          <p>See More</p>
+        </div> 
+      </div>
+      <div class="box8 box">
+        <div class="box-content">
+          <h2>Discover fashion Trends</h2>
+          <div class="box-image" style="background-image: url('box8_image.jpg');"></div>
+          <p>See More</p>
+        </div> 
+      </div>
+      <div class="box9 box">
+        <div class="box-content">
+          <h2>Discover fashion Trends</h2>
+          <div class="box-image" style="background-image: url('box8_image.jpg');"></div>
+          <p>See More</p>
+        </div> 
+      </div>
+    </div>
+    <footer>
+      <div class="foot-panel1">
+        Back to Top
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to Know us</p>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">About Amazon</a>
+          <a href="">Investors Relations</a>
+          <a href="">Amazon devices</a>
+          <a href="">Amazon Sciencs</a>
+        </ul>
+        <ul>
+          <p>Make Money withus</p>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">About Amazon</a>
+          <a href="">Investors Relations</a>
+          <a href="">Amazon devices</a>
+          <a href="">Amazon Sciencs</a>
+        </ul>
+        <ul>
+          <p>Amazon Payment Products</p>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">About Amazon</a>
+          <a href="">Investors Relations</a>
+          <a href="">Amazon devices</a>
+          <a href="">Amazon Sciencs</a>
+        </ul>
+        <ul>
+          <p>Let us Help You</p>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">About Amazon</a>
+          <a href="">Investors Relations</a>
+          <a href="">Amazon devices</a>
+          <a href="">Amazon Sciencs</a>
+        </ul>
+      </div>
+      <div class="foot-panel3">
+        <div class="logo"></div>
+      </div>
+      <div class="foot-panel4">
+        <div class="pages">
+          <a>Conditions of Use</a>
+          <a>Privacy notes</a>
+          <a>Your ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          &copy;1996-2024,Amazon.com or it's affiliate
+        </div>
+      </div>
+    </footer>
 </body>
-<script src="script.js"></script>
 </html>

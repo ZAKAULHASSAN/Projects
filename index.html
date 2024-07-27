@@ -1,48 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="search-box">
-                <input type="text" placeholder="Enter Your Location" class="inBox">
-                <button class="fa-solid fa-magnifying-glass" id="search-button"></button>
+    <div class="main">
+        <nav>
+            <span><img width="100" src="assets/img/Netflix_Logo_PMS.png" alt=""></span>
+            <div>
+                <button id="bg">
+                    <select name="lang" id="lang" class="btn nav-btn">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="sar">Saraiki</option>
+                    </select>
+                </button>
+                <button class="btn redbtn-nav ">Sign In</button>
             </div>
-        </div>
-        <div class="location-not-found">
-            <h1>Sorry! Location Not Found</h1>
-            <img src="/images/404.png" alt="404">
-        </div>
-        <div class="weather-body">
-            <img src="/images/cloud.png" alt="Weather" class="weather-image">
-            <div class="weather-box">
-                <p class="temperature">0<sup>°C</sup></p>
-                <p class="description">Light Rain</p>
-            </div>
-            <div class="weather-details">
-                <div class="humidity">
-                    <img src="/images/water.png" alt="">
-                    <div class="text">
-                        <span id="humidity">45%</span>
-                        <p>humidity</p>
-                    </div>
-                </div>
-                <div class="wind">
-                    <i class="fa-solid fa-wind"></i>
-                    <div class="text">
-                        <span id="wind-speed">12Km/h</span>
-                        <p>wind speed</p>
-                    </div>
-                </div>
+        </nav>
+        <div class="box"></div>
+        <div class="hero">
+            <span>Enjoy Big Movies,Hit Series and more from Rs 200.</span>
+            <span>Join Today, Cancel Any Time.</span>
+            <span>Ready to watch? Enter your email to create your account</span>
+            <div id="input-1">
+                <input type="text" placeholder="Email Address" id="in">
+                <button class="btn redbtn-hero">Get Started &gt;</button>
             </div>
         </div>
     </div>
+    <hr>
+    <section class="first">
+        <div class="first-content">
+            <div id="fir"> Enjoy on your Tv</div>
+            <div id="sec">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</div>
+        </div>
+        <div class="secImg">
+            <img src="/assets/img/tv.png" alt="">
+            <video src="/assets/vid/video-tv-0819.m4v" controls autoplay loop muted></video>
+        </div>
+    </section>
+    <hr>
+    <section class="first second">
+        <div class="secImg">
+            <img src="/assets/img/mobile-0819.jpg" alt="">
+        </div>
+        <div class="first-content">
+            <div id="fir"> Download your shows to watch offline</div>
+            <div id="sec">Save your favorites easily and always have something to watch.</div>
+        </div>
+
+    </section>
+    <hr>
+    <section class="first third">
+        <div class="first-content">
+            <div id="fir"> Watch Everywhere Stream</div>
+            <div id="sec">Stream unlimited movies and TV shows on your phone , tablet, laptop, and TV</div>
+        </div>
+        <div class="secImg">
+            <img src="/assets/img/tv.png" alt="">
+            <video src="/assets/vid/Video 53_assets_videos_video1.m4v" controls autoplay loop muted></video>
+        </div>
+    </section>
+    <hr>
+    <section class="first second">
+        <div class="secImg">
+            <img src="/assets/img/kidsimg.png" alt="">
+        </div>
+        <div class="first-content">
+            <div id="fir"> Create Profiles For Kids</div>
+            <div id="sec">Send Children on adventure with their favorites characters in a space
+                made just for them - Free with your membership
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <span>What is Netflix</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="red" fill="none">
+                <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>How does much Netflix Cost?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="red" fill="none">
+                <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>Where Can I watch?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="red" fill="none">
+                <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>How Do I cancel?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="red" fill="none">
+                <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>Is Netflix good for kids?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="red" fill="none">
+                <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+    </section>
+    <div>
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+    </div>
+    <div class="info" id="input-1">
+        <input type="text" placeholder="Email Address" id="in">
+        <button class="btn redbtn-hero" style="margin: 10px;">Get Started &gt;</button>
+    </div>
+    <hr>
+    <footer>
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <a href="">Question? Contect US</a>
+                <a href="">FAQ</a>
+                <a href="">Privacy</a>
+                <a href="">Speed Test</a>
+                <a href="">Investors Relations</a>
+            </ul>
+            <ul>
+                <a href="">Help Centers</a>
+                <a href="">Jobs</a>
+                <a href="">Cookies prefernce</a>
+                <a href="">Legal Notives</a>
+            </ul>
+            <ul>
+                <a href="">Accounts </a>
+                <a href="">Ways to Watch</a>
+                <a href="">Corporate information</a>
+                <a href="">Only on Netflix</a>
+            </ul>
+            <ul>
+                <a href="">Media Centers</a>
+                <a href="">Terms of Use</a>
+                <a href="">Contect Us</a>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="foot-panel3">
+            <div>
+                <select name="lang" id="lang2" class="btn nav-btn">
+                    <option value="English">English</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="sar">Saraiki</option>
+                </select>
+            </div>
+            <div class="logo"></div>
+            <div>
+                <h3>Netflix Pakistan</h3>
+            </div>
+
+        </div>
+
+        <div class="foot-panel4">
+
+            <div class="copyright">
+                <h2> &copy;1996-2024,Netflix Pakistan made by ZACK</h2>
+            </div>
+        </div>
+    </footer>
 </body>
-<script src="script.js"></script>
+
 </html>

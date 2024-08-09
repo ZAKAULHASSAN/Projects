@@ -3,46 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="myimage.jpg">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="search-box">
-                <input type="text" placeholder="Enter Your Location" class="inBox">
-                <button class="fa-solid fa-magnifying-glass" id="search-button"></button>
-            </div>
+    <nav>
+         <!-- <div class="logo">
+            <img id="one_img" src="tom.jpg" alt="">
+        </div> -->
+       <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+       </ul>
+       <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+       </div> 
+    </nav>
+    <div class="intro" id="home">
+        <div class="i">
+            <img id="my" src="myimage.jpg" alt="">
         </div>
-        <div class="location-not-found">
-            <h1>Sorry! Location Not Found</h1>
-            <img src="/images/404.png" alt="404">
-        </div>
-        <div class="weather-body">
-            <img src="/images/cloud.png" alt="Weather" class="weather-image">
-            <div class="weather-box">
-                <p class="temperature">0<sup>°C</sup></p>
-                <p class="description">Light Rain</p>
-            </div>
-            <div class="weather-details">
-                <div class="humidity">
-                    <img src="/images/water.png" alt="">
-                    <div class="text">
-                        <span id="humidity">45%</span>
-                        <p>humidity</p>
-                    </div>
-                </div>
-                <div class="wind">
-                    <i class="fa-solid fa-wind"></i>
-                    <div class="text">
-                        <span id="wind-speed">12Km/h</span>
-                        <p>wind speed</p>
-                    </div>
-                </div>
+        
+        <div id="image1">
+            <!-- Personal info -->
+            <div class="info">
+                <h3>Hello,<b>It's Me</b></h3>
+                <h1>ZACK</h1>
+                <p id="zack">Passionate front-end web developer with a keen eye for design,
+                     skilled in creating responsive and interactive user interfaces using HTML, CSS, and JavaScript.
+                     Committed to enhancing user experiences through innovative and efficient coding solutions.</p>
             </div>
         </div>
     </div>
-</body>
+    <h1 id="edu">EDUCATION</h1>
+    <div class="education">
+        <div class="educ" id="bs">
+            <h3>Bachelor Of <br>Software Engineering</h3>
+            <p id="se">Holder of a Bachelor of Science in Software Engineering, equipped with comprehensive knowledge in software development, system design, and project management.
+                 Experienced in various programming languages and methodologies, with a strong focus on creating efficient, scalable, and robust software solutions. 
+                Proficient in both theoretical concepts and practical applications, ensuring high-quality software engineering practices.</p>
+        </div>
+        <div class="educ" id="inter">
+            <h3>FSC. <br>Pre Engineering</h3>
+            <p id="fsc">The Holder of FSC Pre-Engineering degree that provides a comprehensive foundation in mathematics, physics, and chemistry, preparing students for advanced studies in engineering and technology fields. Emphasizing analytical skills and problem-solving techniques, the program equips graduates with the necessary knowledge to pursue careers in various engineering disciplines or further their education in specialized engineering programs.</p>
+        </div>
+        <div class="educ" id="mat">
+            <h3>SSC 10 <sup>th</sup></h3>
+            <p id="matt">Achieved Secondary School Certificate (SSC) with distinction, demonstrating strong academic performance and dedication. Excelled in core subjects, showcasing a solid foundation in mathematics, science, and languages. Actively participated in extracurricular activities, contributing to well-rounded personal development.</p>
+        </div>
+    </div>
+    <h1 id="sk">SKILLS</h1>
+    <div class="skills">
+        <div class="all">
+            <div class="myskill" id="html">
+                <img  src="html img.jpg" alt="" id="o">
+            </div>
+            <div class="myskill" id="css">
+                <img  src="css img.png" alt="" id="o">
+            </div>
+            <div class="myskill" id="js">
+                <img  src="js img.png" alt="" id="o">
+            </div>
+            <div class="myskill" id="react">
+                <img  src="react img.png" alt="" id="o">
+            </div>
+            <div class="myskill" id="boot">
+                <img  src="bpptstrap.jpg" alt="" id="o">
+            </div>
+            <div class="myskill" id="cpp">
+                <img  src="cpp img.png" alt="" id="o">
+            </div>
+            <div class="myskill" id="java">
+                <img  src="java img.png" alt="" id="o">
+            </div>
+            <div class="myskill" id="py">
+                <img  src="python img.jpg" alt="" id="o">
+            </div>
+            <div class="myskill" id="node">
+                <img  src="node js img.png" alt="" id="o">
+            </div>
+            <div class="myskill" id="php">
+                <img  src="php img.png" alt="" id="o">
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact" class="contact-container">
+        <h1 id="edu">Contact Me</h1>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; THE ZACK.</p>
+    </footer>
+    
+</body>   
 <script src="script.js"></script>
 </html>
